@@ -48,7 +48,7 @@ create_ovs_bridge br-2
 create_ovs_bridge br-3
 
 attach_ovs_to_ovs br-1 br-2 br-ovs12 br-ovs21 1
-attach_ovs_to_ovs br-1 br-2 br-ovs23 br-ovs32 2
+attach_ovs_to_ovs br-2 br-3 br-ovs23 br-ovs32 2
 
 attach_ns_to_ovs red br-1 veth-red veth-red-br 2 10.0.0.2
 attach_ns_to_ovs blue br-3 veth-blue veth-blue-br 3 10.0.0.3
